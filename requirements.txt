@@ -1,0 +1,6 @@
+pandas==1.2.0
+xlrd==1.2.0
+pyqt5
+requests
+pyinstaller
+
