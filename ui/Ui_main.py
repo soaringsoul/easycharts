@@ -231,7 +231,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.tabWidget_op.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -251,7 +251,7 @@ class Ui_MainWindow(object):
         self.tabWidget_op.setTabText(self.tabWidget_op.indexOf(self.tab_charts_op), _translate("MainWindow", "图表配置"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_pie), _translate("MainWindow", "饼图"))
         item = self.tableWidget_data.horizontalHeaderItem(0)
-        item.setText(_translate("MainWindow", "列名"))
+        item.setText(_translate("MainWindow", "数据项"))
         item = self.tableWidget_data.horizontalHeaderItem(1)
         item.setText(_translate("MainWindow", "统计值"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_data), _translate("MainWindow", "数据预览"))
@@ -266,7 +266,7 @@ class Ui_MainWindow(object):
         self.action_check_update.setText(_translate("MainWindow", "检查更新"))
         self.action_help.setText(_translate("MainWindow", "查看帮助"))
 from PyQt5 import QtWebEngineWidgets
-# import images_rc
+
 
 
 if __name__ == "__main__":

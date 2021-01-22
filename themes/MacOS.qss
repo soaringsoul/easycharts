@@ -16,7 +16,7 @@ QPushButton, QToolButton, QCommandLinkButton{
     border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #c1c9cf, stop:1 #d2d8dd);
     border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #c1c9cf, stop:1 #d2d8dd);
     border-width: 2px;
-    border-radius: 8px;
+    border-radius: 10px;
     color: #616161;
     font-weight: bold;
     background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 #fbfdfd, stop:0.5 #ffffff, stop:1 #fbfdfd);

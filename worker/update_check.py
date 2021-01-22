@@ -13,7 +13,7 @@ class UpdateCheck(QtCore.QThread):
         self.current_version = current_verison
 
     def get_cloud_settings_json(self):
-        url = "https://raw.githubusercontent.com/soaringsoul/EasyPie/main/settings/settings.json"
+        url = "https://gitee.com/soaringsoul/program_cloud_settings/raw/master/easycharts_settings.json"
         resq = requests.get(url)
         return resq.json()
 

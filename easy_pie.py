@@ -76,7 +76,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.comboBox_style_label.addItems(self.label_style_formatters.keys())
 
     def init_sign(self):
-
         self.tabWidget.currentChanged.connect(self.change_tab)
         self.action_help.triggered.connect(self.help)
         self.action_aboutme.triggered.connect(self.about)
@@ -96,7 +95,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # 添加关注公众号弹窗
         self.support_me_window = ImageWindow(':/main/img/supportme.jpg', '支持我一下吧！')
-
         self.toolButton_supportme.clicked.connect(self.show_support_me)
 
     @pyqtSlot()
@@ -117,7 +115,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                                                          "文件类型(*.xlsx;*.xls);")  # 设置文件扩展名过滤
 
         fileName = fileName.replace('/', '\\')  # windows下需要进行文件分隔符转换
-
         return (fileName)
 
     def closeEvent(self, QCloseEvent):
@@ -231,13 +228,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.render_pie.progress_signal.connect(self.show_progress)
             self.render_pie.charts_data_signal.connect(self.show_charts_data)
             self.render_pie.start()
+            self.tabWidget.setCurrentIndex(0)
 
     def show_charts(self, render_embed_str):
         self.web_view.setHtml(render_embed_str)
 
     def show_charts_data(self, charts_data):
-        row_count = self.tableWidget_data.rowCount()
-
         # self.tableWidget_data.setHorizontalHeaderLabels(('第一列', '第二列'))
         row_count = 0
         self.tableWidget_data.setRowCount(len(charts_data))
@@ -248,7 +244,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             item.setTextAlignment(Qt.AlignCenter)
             item.setText(str(data[0]))
             self.tableWidget_data.setItem(row_count, 0, item)
-
 
             item = QTableWidgetItem()
             item.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)  # 无法编辑
