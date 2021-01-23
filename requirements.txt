@@ -1,6 +1,6 @@
-pandas==1.2.0
+pandas
 xlrd==1.2.0
-pyqt5
+pyqt5==5.10.1
 requests
 pyinstaller
-
+pyecharts==1.9.0

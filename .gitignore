@@ -12,6 +12,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 easy_location/
+windows_exe/
 build/
 develop-eggs/
 dist/

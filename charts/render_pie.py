@@ -5,7 +5,7 @@ from PyQt5 import QtCore
 from pyecharts.charts import Pie
 from pyecharts import options as opts
 from pyecharts.globals import CurrentConfig
-from pyecharts.commons.utils import JsCode
+
 
 CurrentConfig.ONLINE_HOST = "https://cdn.jsdelivr.net/npm/echarts@5.0.0/dist/"
 
@@ -17,7 +17,15 @@ class RenderPie(QtCore.QThread):
     charts_data_signal = QtCore.pyqtSignal(list)
     progress_signal = QtCore.pyqtSignal(str)
 
-    def __init__(self, df, col_name, is_donut, is_rose, show_legend, title, label_position, label_formatter,color_scheme):
+    def __init__(self,
+                 df, col_name,
+                 is_donut, is_rose,
+                 show_legend,
+                 title,
+                 label_position,
+                 label_formatter,
+                 color_scheme,
+                 ):
         super(RenderPie, self).__init__()
         self.df = df
         self.col_name = col_name
@@ -35,6 +43,7 @@ class RenderPie(QtCore.QThread):
         self.label_formatter = label_formatter
         print(self.label_formatter)
         self.color_scheme = color_scheme
+
 
     def run(self):
         # 拉取云端数据
