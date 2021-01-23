@@ -303,7 +303,7 @@ def MyQMessageBox(title, text, button1, button2=None):
 
 def show_loading():
     # 创建QSplashScreen对象实例
-    splash = QtWidgets.QSplashScreen(QtGui.QPixmap(":/icon/img/pie.png"))
+    splash = QtWidgets.QSplashScreen(QtGui.QPixmap(":/icon/img/charts.png"))
     # 设置画面中的文字的字体
     splash.setFont(QFont('Microsoft YaHei UI', 10))
     # 显示画面
