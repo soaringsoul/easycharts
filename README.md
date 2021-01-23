@@ -1,9 +1,3 @@
----
-typora-root-url: ./
----
-
-
-
 <h1 align="center">Easy Charts</h1>
 <p align="center">
     <em>PyQt5 ❤️ pyecharts = EasyCharts</em>
