@@ -1,3 +1,7 @@
+---
+typora-root-url: ./
+---
+
 
 
 <h1 align="center">Easy Charts</h1>
@@ -24,13 +28,9 @@
 * 生成的图表可以直接右键复制图表，支持粘贴到word,excel，ppt中。
 * 因为后续会持续添加更多图表，所以程序中添加了更新检测机制，如果有新的版本，在打开程序后会收到更新提醒。
 
-
-
 ## ⏳ 快速开始
 
-![easychart_quick_start](D:\OneDrive\myGitHubProjects\easycharts\ui\screenshot\easychart_quick_start.gif)
-
-
+![easychart_quick_start](/ui/screenshot/easychart_quick_start.gif)
 
 ## 🔰 windows下安装
 
