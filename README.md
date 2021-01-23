@@ -30,7 +30,7 @@
 
 下载windows安装文件，解压并安装：
 
-> 链接：https://pan.baidu.com/s/1LVSstsp0Y_7PE95yfcpgvg 
+> 链接：https://pan.baidu.com/s/1dnBMgBHE2OWjVorwuymC9g 
 > 提取码：1234 
 
 ![setup](/ui/screenshot/setup.png)
