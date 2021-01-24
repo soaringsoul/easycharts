@@ -30,8 +30,9 @@
 
 下载windows安装文件，解压并安装：
 
-> 链接：https://pan.baidu.com/s/1dnBMgBHE2OWjVorwuymC9g 
+> 链接：https://pan.baidu.com/s/18n9b2O0QHDH0xbwe3AYrLw 
 > 提取码：1234 
+> 复制这段内容后打开百度网盘手机App，操作更方便哦
 
 ![setup](/ui/screenshot/setup.png)
 

@@ -199,6 +199,6 @@ class RenderPie(QtCore.QThread):
                 ))
             )
             self.result_signal.emit(c.render_embed())
-        
+
         else:
             self.show_progress("你还没有导入文件哦！")
