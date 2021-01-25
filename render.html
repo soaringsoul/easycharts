@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.0.0/dist/echarts.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.0.1/dist/echarts.min.js"></script>
 
-    <style type="text/css">
-            html,body{
-                height:100%;
-                width:100%
-            }
-        </style>
 </head>
-<body onresize="resizeFresh()">
-    <div id="896da9e06246443a880e2c66eccf95a6" class="chart-container" style="width:100%; height:100%; margin:auto; top:30px"></div>
-
+<body>
+    <div id="e857f8337afd474b95498c9106c9f31a" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_896da9e06246443a880e2c66eccf95a6 = echarts.init(
-            document.getElementById('896da9e06246443a880e2c66eccf95a6'), 'white', {renderer: 'canvas'});
-        var option_896da9e06246443a880e2c66eccf95a6 = {
+        var chart_e857f8337afd474b95498c9106c9f31a = echarts.init(
+            document.getElementById('e857f8337afd474b95498c9106c9f31a'), 'white', {renderer: 'canvas'});
+        var option_e857f8337afd474b95498c9106c9f31a = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -28,27 +21,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#ff5a5f",
-        "#7b0051",
-        "#007A87",
-        "#00d1c1",
-        "#8ce071",
-        "#ffb400",
-        "#b4a76c",
-        "#ff8083",
-        "#cc0086",
-        "#00a1b3",
-        "#00ffeb",
-        "#bbedab",
-        "#ffd266",
-        "#cbc29a",
-        "#ff3339",
-        "#ff1ab1",
-        "#005c66",
-        "#00b3a5",
-        "#55d12e",
-        "#b37e00",
-        "#988b4e"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -56,24 +37,24 @@
             "clockwise": true,
             "data": [
                 {
-                    "name": "\u672a\u4e0a\u8fc7\u5b66\uff08\u5305\u62ec\u626b\u76f2\u73ed\uff09",
-                    "value": 176.0
+                    "name": "\u6709\u914d\u5076",
+                    "value": 265.0
                 },
                 {
-                    "name": "\u5c0f\u5b66\uff08\u5305\u62ec\u79c1\u587e\uff09",
-                    "value": 164.0
+                    "name": "\u4e27\u5076",
+                    "value": 100.0
                 },
                 {
-                    "name": "\u521d\u4e2d",
-                    "value": 25.0
+                    "name": "\u4ece\u672a\u7ed3\u5a5a",
+                    "value": 5.0
                 },
                 {
-                    "name": "\u9ad8\u4e2d / \u4e2d\u4e13 / \u804c\u9ad8",
-                    "value": 7.0
+                    "name": "\u79bb\u5a5a",
+                    "value": 2.0
                 }
             ],
             "radius": [
-                "0%",
+                "40%",
                 "75%"
             ],
             "center": [
@@ -98,10 +79,10 @@
     "legend": [
         {
             "data": [
-                "\u672a\u4e0a\u8fc7\u5b66\uff08\u5305\u62ec\u626b\u76f2\u73ed\uff09",
-                "\u5c0f\u5b66\uff08\u5305\u62ec\u79c1\u587e\uff09",
-                "\u521d\u4e2d",
-                "\u9ad8\u4e2d / \u4e2d\u4e13 / \u804c\u9ad8"
+                "\u6709\u914d\u5076",
+                "\u4e27\u5076",
+                "\u4ece\u672a\u7ed3\u5a5a",
+                "\u79bb\u5a5a"
             ],
             "selected": {},
             "type": "scroll",
@@ -137,7 +118,7 @@
     },
     "title": [
         {
-            "text": "\u6587\u5316\u7a0b\u5ea6",
+            "text": "\u5a5a\u59fb\u72b6\u51b5",
             "left": "center",
             "top": "top",
             "padding": 5,
@@ -145,15 +126,7 @@
         }
     ]
 };
-        chart_896da9e06246443a880e2c66eccf95a6.setOption(option_896da9e06246443a880e2c66eccf95a6);
+        chart_e857f8337afd474b95498c9106c9f31a.setOption(option_e857f8337afd474b95498c9106c9f31a);
     </script>
-	<script>   
-     //窗口大小变化时候，进行刷新页面操作，防止样式混乱
-         var x=window.innerWidth;
-     function resizeFresh(){
-         if(x!=window.innerWidth)
-             location.reload();
-     }
- </script>
 </body>
 </html>

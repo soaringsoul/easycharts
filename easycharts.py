@@ -251,8 +251,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.render_pie.result_signal.connect(self.show_charts)
             self.render_pie.progress_signal.connect(self.show_progress)
             self.render_pie.charts_data_signal.connect(self.show_charts_data)
-            self.render_pie.start()
-            self.tabWidget.setCurrentIndex(0)
+            try:
+                self.render_pie.start()
+                self.tabWidget.setCurrentIndex(0)
+            except Exception as e:
+                self.show_progress("好像哪里不对！错误详情：%s" % e)
 
     def show_charts(self, render_embed_str):
         self.web_view.setHtml(render_embed_str)
@@ -303,7 +306,7 @@ def MyQMessageBox(title, text, button1, button2=None):
 
 def show_loading():
     # 创建QSplashScreen对象实例
-    splash = QtWidgets.QSplashScreen(QtGui.QPixmap(":/icon/img/charts.png"))
+    splash = QtWidgets.QSplashScreen(QtGui.QPixmap(":/main/img/EasyCharts.png"))
     # 设置画面中的文字的字体
     splash.setFont(QFont('Microsoft YaHei UI', 10))
     # 显示画面

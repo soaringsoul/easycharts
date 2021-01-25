@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Tasks SYSTEM "Tasks-6.0.dtd">
 <!-- eric6 tasks file for project easy_pie -->
-<!-- Saved: 2021-01-23, 20:05:07 -->
+<!-- Saved: 2021-01-25, 18:27:09 -->
 <Tasks version="6.0">
   <ProjectScanFilter></ProjectScanFilter>
-  <Task priority="1" completed="False" type="2" uid="{7ec75d6c-3153-4d79-8ae9-b02e74ed2f03}">
+  <Task priority="1" completed="False" type="2" uid="{d2c82fc2-61ae-4a81-a62e-177c429faa2e}">
     <Summary>WARNING: Any manual changes made to this file will be lost when pyuic5 is</Summary>
     <Description></Description>
-    <Created>2021-01-23, 19:50:24</Created>
+    <Created>2021-01-25, 17:54:33</Created>
     <Resource>
       <Filename>Ui_main.py</Filename>
       <Linenumber>7</Linenumber>

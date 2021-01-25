@@ -1,13 +1,11 @@
 import pandas as pd
 from PyQt5 import QtCore
 
-
 from pyecharts.charts import Pie
 from pyecharts import options as opts
 from pyecharts.globals import CurrentConfig
 
-
-CurrentConfig.ONLINE_HOST = "https://cdn.jsdelivr.net/npm/echarts@5.0.0/dist/"
+CurrentConfig.ONLINE_HOST = "https://cdn.jsdelivr.net/npm/echarts@5.0.1/dist/"
 
 
 class RenderPie(QtCore.QThread):
@@ -43,7 +41,6 @@ class RenderPie(QtCore.QThread):
         self.label_formatter = label_formatter
         print(self.label_formatter)
         self.color_scheme = color_scheme
-
 
     def run(self):
         # 拉取云端数据
@@ -199,6 +196,11 @@ class RenderPie(QtCore.QThread):
                 ))
             )
             self.result_signal.emit(c.render_embed())
+
+            try:
+                c.render()
+            except:
+                pass
 
         else:
             self.show_progress("你还没有导入文件哦！")
